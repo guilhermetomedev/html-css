@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            font: normal, normal, 16px, arial, verdana, sans-serif;
+            l
+        }
+        a {
+            color: rgb(57, 57, 168);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:active {
+            color: rgb(61, 200, 255);
+        }
+        a:visited {
+            cr: rgb(99, 99, 255);
+        }
+        a:hover {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+        .especial:hover {
+            background-color: rgb(255, 255, 29);
+        }
+        .especial::before {
+            content: '=>';
+            font-weight: bolder;
+        }
+        .especial::after {
+            content: '<=';
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li> Para aprender HMTL5 e CSS, acesse o <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank"  class="especial">GitHub do Guanabara</a></li>
+        <li class="">Se quiser conhecer mais sobre os padrôes, visite o site do <a href="https://www.w3schools.com" target="_blank">Escritório do W3C no Brasil</a></li>
+        <li>Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/c/CursoemVídeo" target="_blank">canal do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

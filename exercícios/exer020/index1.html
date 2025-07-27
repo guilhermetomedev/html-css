@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe: hover</title>
+    <style>
+        div:hover > p{
+            display: block;
+            background-color: black;
+            width: 115px;
+        }
+        div > p{
+            display: none;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>passa o curso sobre o texto abaixo:</p>
+    <div>
+        clique aqui
+        <p>texto escondido</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

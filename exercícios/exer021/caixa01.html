@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de box-level e inline-level</title>
+    <style>
+        body {
+            background-color: rgba(128, 128, 128, 0.692);
+            font: normal, lighter, 16px, arial, verdana, sans-serif;
+        }
+        h1 {
+            background-color: rgba(70, 70, 70, 0.856);
+            color: rgba(155, 155, 155, 0.836);
+            padding-left: 10px;
+            border: 5px solid rgba(0, 0, 0, 0.452);
+            outline: 7px solid black;
+            margin: auto;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            
+        }
+        p {
+            background-color: rgba(70, 70, 70, 0.856);
+            color: rgba(155, 155, 155, 0.836);
+            margin: 5px;
+            padding: 5px;
+            margin: 20px 0px;
+        }
+        p > a {
+            background-color: antiquewhite;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1px;
+            border: 0px solid antiquewhite;
+            margin: 5px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+
+        }
+        p {
+            padding: px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-level</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aut voluptatum eligendi, reprehenderit voluptatibus accusamus <a href="#">inline-level</a> laudantium saepe ullam recusandae ut, eveniet tempore tempora porro, quisquam officiis excepturi sequi. Nisi, nesciunt.</p>
+</body>
+</html>

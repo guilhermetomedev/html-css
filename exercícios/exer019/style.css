@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*
+id no html = # em css
+class no html = . em css
+*/
+
+body {
+    background-color: blueviolet;
+    font: normal, normal, 16px, arial, verdana, sans-serif;
+}
+h1 {
+    color: rgb(73, 0, 141);
+    text-decoration: underline;
+}
+h2 {
+    color: rgb(53, 18, 87);
+}
+#principal {
+    background-color: rgb(58, 0, 112);
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+}
+.basico {
+    color: rgb(202, 172, 0);
+}
+.intermediario {
+    color: hsla(240, 100%, 42%, 0.87);
+}
+.avancado {
+    color: rgb(126, 51, 8);
+}
+p {
+    text-align: justify;
+}

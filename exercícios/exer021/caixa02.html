@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font: normal lighter 16px arial;
+        }
+        header {
+            background-color: rgba(0, 0, 255, 0.493);
+            height: 50px;
+            border: 5px solid blue;
+            padding-left: 5px;
+            margin: auto;
+        }
+        nav > a{
+            margin-right: 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        nav {
+            text-align: right;
+        }
+        a:visited {
+            color: cornflowerblue;
+        }
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+        a:hover {
+            color: rgb(0, 0, 167);
+            font-size: 20px;   
+            margin: auto; 
+            text-decoration: underline;    
+        }
+        h1 {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">contact</a>
+            <a href="#">sobre</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>meu site</h1>
+        <section id="secao1">
+            <h2>inicio</h2>
+            <article id="noticia">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quia modi soluta? Quam magnam non minus voluptas sequi recusandae modi possimus architecto facilis, dignissimos magni esse expedita! Porro, inventore delectus, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae modi laborum deserunt autem, non esse molestias ab nobis facilis sed dolorem inventore exercitationem harum ad? Maxime eius esse numquam velit?</p>
+                <aside>
+                    feito pelo autor jhonas junior
+                </aside>
+            </article>
+        </section>
+        <section id="secao2">
+            <h2>continuação</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet facilis dignissimos repellendus dolore voluptates esse quia nisi obcaecati consequatur hic magnam consequuntur vero, culpa debitis! Illum dolorum tempora iure non!, Lorem <span>ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eaque.</span> Aut quo provident perspiciatis commodi architecto repudiandae earum, magnam doloribus magni eum possimus! Adipisci voluptates dicta dignissimos in quibusdam obcaecati.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
