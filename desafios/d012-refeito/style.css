@@ -39,6 +39,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     gap: 8px;
+    padding-bottom: 8px;
 }
 nav a {
     margin-left: 16px;
@@ -47,8 +48,8 @@ nav a {
     font: normal bold 16px var(--fonte-comum);
 }
 nav a:hover{
-    background: linear-gradient(to right,var(--cor-3)5%, var(--cor-2));
-    text-decoration: underline;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.651);
+    padding-bottom: 1px;
 }
 main {
     background-color: white;
@@ -110,9 +111,35 @@ footer {
     padding-top: 13px;
     font-size: 1.2em;
 }
+aside {
+    background-color: #593E25;
+    border-radius: 2em;
+}
+aside > h3 {
+    background-color: var(--cor-2);
+    border-radius: 1em 1em 0px 0px;
+    height: 4vh;
+    padding: 16px;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+aside p{
+    padding: 0.85em;
+    color: #ffffff;
+}
+aside ul{
+    list-style: none;
+    columns: 2;
+    margin-left: 3rem;
+    color: white;
+}
 footer a{
     color: white;
     text-decoration: none;
+}
+.foradoaside {
+    margin: 0.5em 1.5em;
 }
 footer a:hover{
     text-decoration: underline;
