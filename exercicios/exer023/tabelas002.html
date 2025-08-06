@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas grandes</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            width: 700px;
+            height: 50px;
+            margin: auto;
+        }
+        th {
+            background-color: rgba(128, 128, 128, 0.5);
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        tr > td {
+            text-align: center;
+        }
+        .numero {
+            text-align: right;
+        }
+        tfoot {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade Federativa</th>
+                <th>População</th>
+                <th>País comparável(habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>São Paulo</td>
+                <td class="numero">45 973 194</td>
+                <td>Iraque (46 042 015)</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Minas Gerais</td>
+                <td class="numero">21 322 691</td>
+                <td>Zâmbia (21 314 956)</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 219 679</td>
+                <td>Camboja (17 638 801)</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>bahia</td>
+                <td class="numero">14 850 513</td>
+                <td>Guiné (14 754 785)</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>Paraná</td>
+                <td class="numero">11 824 665</td>
+                <td>Haiti (11 772 557)</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 229 915</td>
+                <td>República Dominicana (11 427 557)</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>Pernambuco</td>
+                <td class="numero">9 539 029</td>
+                <td>Togo (9 515 236)</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>Ceará</td>
+                <td class="numero">9 233 656</td>
+                <td>Áustria (9 120 813)</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td>Pará</td>
+                <td class="numero">8 664 306</td>
+                <td>Serra Leoa (8 642 022)</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>Santa Catarina</td>
+                <td class="numero">8 058 441</td>
+                <td>Laos (7 769 819)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de População</th>
+                <td colspan="2"><strong>985.542.901</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
