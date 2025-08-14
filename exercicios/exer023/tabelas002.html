@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com tabelas grandes</title>
     <style>
+        h1 {
+            font: normal bold 2em arial, sans-serif;
+        }
+        caption {
+            font-size: 1.5em;
+            background-color: rgba(128, 128, 128, 0.308);
+            padding: 16px;
+        }
         table, td, th {
             border: 1px solid black;
             border-collapse: collapse;
@@ -13,17 +21,26 @@
             height: 50px;
             margin: auto;
         }
-        th {
+        table {
+            position: relative;
+        }
+        thead, tfoot {
             background-color: rgba(128, 128, 128, 0.5);
             color: white;
             font-weight: bold;
             font-size: 1.2em;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(128, 128, 128);
         }
         tr > td {
             text-align: center;
         }
         .numero {
             text-align: right;
+            padding-right: 10px;
         }
         tfoot {
             text-align: center;
@@ -31,13 +48,15 @@
     </style>
 </head>
 <body>
+    <h1>Tabelas Grandes</h1>
     <table>
+        <caption>Densidade Populacional de cada estado</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População</th>
-                <th>País comparável(habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">País comparável(habitantes)</th>
             </tr>
         </thead>
         <tbody>
@@ -104,10 +123,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de População</th>
-                <td colspan="2"><strong>985.542.901</strong></td>
+                <th scope="row">Total de População</th>
+                <td><strong>985.542.901</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus qui sint, ea facere asperiores unde. Quae, reiciendis labore aspernatur animi consequuntur maiores doloribus. Omnis labore dolorum temporibus minima itaque cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis voluptatibus assumenda, itaque autem delectus accusamus, aperiam at rem corrupti sapiente. Beatae, itaque. Laboriosam perspiciatis tempora velit molestias, nulla voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt harum, recusandae beatae non velit reiciendis quasi unde sequi veritatis ea provident nihil magni minus eligendi iste id, sapiente quas molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos enim rerum animi ab quam explicabo illo voluptatem modi. Ad iure quasi aliquam animi placeat quos explicabo laboriosam reiciendis vero voluptatibus?</p>
 </body>
 </html>
