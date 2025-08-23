@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body, html {
+            background-color: antiquewhite;
+        }
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            border-radius: 5px;
+            margin-top: 1rem;
+            background-color: lightgray;
+        }
+        label, input {
+            display: block;
+            margin: 0.5rem;
+        }
+        input {
+            width: 130px;
+            height: 20px;
+        }
+        p > input {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="#" method="get"autocomplete="off">
+        <div>
+            <label for="inome">Nome do aluno:</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome do aluno" required minlength="5" maxlength="50" size="10">
+        </div>
+        <div>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" placeholder="Nota do aluno" required step="0.1" min="0" max="10" aria-placeholder="de 0 a 10">
+        </div>
+        <div>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes" required value="2024-06">
+        </div>
+        <div>
+            <label for="idata">Data da prova:</label>
+            <input type="date" name="data" id="idata" required value="2024-06-30">
+        </div>
+        <div>
+            <label for="itempo">Horario da prova</label>
+            <input type="time" name="tempo" id="itempo" required value="09:30" min="09:00" max="18:00">
+        </div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
