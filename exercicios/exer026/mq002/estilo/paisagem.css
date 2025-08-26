@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Estilos para telas em modo paisagem (landscape) */
+
+body {
+    background-image: url(../img/cev-landscape.jpg);
+    background-size: cover;
+    background-position: left bottom;
+}
+h1 {
+    text-align: left;
+    padding: 0px;
+}

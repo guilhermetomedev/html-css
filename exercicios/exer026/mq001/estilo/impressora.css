@@ -1,0 +1,24 @@
+/*Estilos para impressora*/
+@charset 'UTF-8';
+
+* {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+html {
+    font: normal normal 1.2em "Times New Roman", Times, serif;
+    line-height: 2.5em;
+}
+menu {
+    display: none;
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+article::after {
+    content: 'Esse site foi impresso e disponibilizado em formato digital no endereço: www.cursoemvideo.com';
+    font-size: 16px;
+}

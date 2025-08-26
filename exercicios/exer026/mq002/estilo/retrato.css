@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Estilos para telas em modo retrato (portrait) */
+
+body {
+    background-image: url(../img/cev-portrait.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
