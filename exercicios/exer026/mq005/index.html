@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaqueries.css">
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu site</h1>
         <i class="fa-solid fa-bars" id="burguer" onclick="clickMenu()"></i>
@@ -39,6 +40,15 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none' 
