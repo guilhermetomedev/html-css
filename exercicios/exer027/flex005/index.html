@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox alinhamento</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        body, html {
+            background-color: bisque;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: green;
+            width: 225px;
+            height: 225px;
+            font: normal bold 2rem arial;
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            Teste de flexbox
+        </section>
+    </main>
+</body>
+</html>
