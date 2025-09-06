@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal normal 1em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(233, 233, 233);
+    line-height: 1.5em;
+    height: 100vh;
+    width: 100%;
+}
+
+section.flex-content {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: beige;
+    /*border: 2px dashed rgb(82, 121, 23);*/
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.text {
+    flex: 1 1 500px;
+    /*border: 2px dashed rgb(0, 195, 255);*/
+}
+
+div.media {
+    flex: 1 0 400px;
+    
+    /*border: 2px dashed rgb(194, 0, 0);*/
+}
+
+div.media > img {
+    display: block;
+    margin: 0 auto 5px;
+    width: 90%;
+}
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.normal, .flex-content {
+    padding: 1rem;
+}
+
+
+h1, h2 {
+    padding: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 930px){
+    div.media > img {
+        float: left;
+    }
+    
+    div.media > iframe {
+        float: left;
+    }
+}
+
