@@ -9,13 +9,16 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: antiquewhite;
+            background-color: rgb(209, 209, 209);
         }
 
         div.container {
             display: grid;
-            grid-template: 100px 50px repeat(2, 100px) 200px 50px/ repeat(4, 1fr);
-            gap: 10px;
+            grid-template: 100px 50px 1fr 100px 100px / repeat(4, 1fr);
+            grid-auto-rows: 100px;
+            height: 100vh;
+            width: 100vw;
+            gap: 5px;
         }
 
         div.container > div {
